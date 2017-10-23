@@ -1,0 +1,119 @@
+<div class="top_wrapper">
+  <div class="container">
+    <ul class="ul_top hidden-479">
+      <li *ngFor="let arr of myArr"><a href="#">{{arr}}</a></li>
+      <div class="clear"></div>
+    </ul>
+  </div>
+</div>
+<div class="header_wrapper">
+  <div class="container">
+    <div class="logo_header col-lg-6 col-md-6 col-sm-3 col-xs-3">
+      <div class="row">
+        <div class="logo_left">
+          <a class="" routerLink="home"><img  class="img-responsive" src="assets/images/logo.png"/></a>
+        </div>
+        <div class="text_left hidden-sm hidden-xs">
+          <div class="text1_feft">khoa công nghệ thông tin</div>
+          <div class="text2_feft">Khoa Công Nghệ Thông Tin ,Trường Đại học Đà Lạt </div>
+          <div class="text3_feft">Số 1, Phù Đổng Thiên Vương, TP. Đà Lạt</div>
+        </div>
+      </div>
+    </div>
+    <div class="header_menu col-lg-6 col-md-6 col-sm-9 col-xs-9">
+      <div class="row">
+        <form class="input-group">
+          <input type="text" placeholder="Tìm Kiếm..." />
+          <button type="submit" type="button"><span class="glyphicon glyphicon-search"></span></button>
+        </form>
+        <!-- /input-group -->
+        <div class="clear"></div>
+        <div class="block_menu hidden-600">
+          <ul>
+            <li><a href="index.html"><i style="color:#006b3f; border-bottom: 1px solid #006b3f ; padding-bottom: 3px;" class="glyphicon glyphicon-home"></i></a></li>
+            <li *ngFor="let arrmenu of myArrMenu"><a routerLink="">{{arrmenu}}</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="block_menu_wrapper hidden-sm hidden-xs">
+  <ul class="menu_wrapper container">
+    <li><a routerLink="about">{{myObject.a}}</a>
+      <ul>
+        <li *ngFor="let biencon of con"><a routerLink="about">{{biencon}}</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="about">{{myObject.b}}</a>
+      <ul>
+        <li *ngFor="let biencon1 of con1"><a href="">{{biencon1}}</a></li>
+      </ul>
+    </li>
+    <li><a href="#">{{myObject.c}}</a>
+    </li>
+    <li><a href="#">{{myObject.d}}</a>
+    </li>
+    <li><a href="#">{{myObject.e}}</a>
+    </li>
+    <li><a href="#">{{myObject.f}}</a>
+    </li>
+    <li><a href="#">{{myObject.g}}</a>
+    </li>
+    <li><a href="#">{{myObject.m}}</a>
+    </li>
+    <li><a href="#">{{myObject.n}}</a>
+    </li>
+  </ul>
+</div>
+<div style="height: 3px;background: url(assets/images/border.png) center center;"></div>
+<div class="silder_wrapper">
+  <div style="position: relative;z-index: 2;">
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider">
+        <img src="assets/images/40 nam.jpg" alt="Chania" title="#caption1" />
+        <img src="assets/images/cs-11433-image117.jpg" alt="Chania" title="#caption2" />
+      </div>
+    </div>
+  </div>
+</div><!-- 
+<!--<home></home> -->
+
+<!--<home></home> -->
+
+<router-outlet></router-outlet>
+<div class="footer_wrapper">
+  <div class="footer container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInLeft">
+        <div class="footerchu1">khoa công nghệ thông tin</div>
+        <div class="footerchu2">Trường đại học đà lạt</div>
+        <div class="footerchu3">Số 1, Phù Đổng Thiên Vương TP Đà Lạt</div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="footer_churight wow fadeInRight">
+          <div>Online: 12</div>
+          <div>Lượt truy cập: 0012345</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer_wrapper1">
+  <div class="footer container ">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 wow fadeInLeft">
+        <div class="footerchu4">Copyright @ 2008 by IT DLU</div>
+      </div>
+      <div class="col-lg-4 col-md-5 col-sm-5 ">
+        <div class="footer_churight1 wow fadeInRight">
+          <a href="#">Bản đồ website</a><a href="#">Nhóm phát triển</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <!-- <app-router></app-router> -->
+</div>
